@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Site para calcular imposto de renda">
+        <meta name="author" content="Leonardo Duarte Mariano e Valkíria Karolina Marcon">
+        <title>Imposto de Renda</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    
+
+    <body>
+        <div id="divp">
+            <p id="pcalc" class="pimposto">CALCULE SEU</p>
+            <p id="pimp" class="pimposto">IMPOSTO DE RENDA</p>
+        </div>
+
+        <div id="dados">
+
+            <h2>Nome completo:</h2>
+            <input type="text" name="nomeC" id="nome" required>
+
+            <h2>Seu salário Bruto:</h2>
+            <input type="number" name="salarioB" id="salarioBruto" required>
+
+            <h2>Número de dependentes:</h2>
+            <input type="number" name="numeroDependentes" id="numeroDepend" required>
+
+        </div>
+
+        <div id="botao1" class="botao">
+            <button onClick="exec()" id="btncalc"><b>Calcular</b></button>
+            <button onclick="recarregar()" class="botoes" id="btnrec">Recarregar</button>
+        </div>
+
+        <table id="tabelaDados">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Salário Bruto</th>
+                    <th>Nº de dependentes</th>
+                    <th>% desconto INSS</th>
+                    <th>desconto INSS</th>
+                    <th>% desconto IRPF</th>
+                    <th>desconto IRPF</th>
+                    <th>Salário líquido</th>
+                 </tr>
+            </thead>
+
+                <tr>
+                    <td class="inv">1</td>
+                    <td class="inv">2</td>
+                    <td class="inv">3</td>
+                    <td class="inv">4</td>
+                    <td class="inv">5</td>
+                    <td class="inv">6</td>
+                    <td class="inv">7</td>
+                    <td class="inv">8</td>
+                </tr>
+        </table>
+    </body>
+        <script src="./script.js"></script>
+</html>
